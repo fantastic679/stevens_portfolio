@@ -1,13 +1,21 @@
+/* Use a custom font */
 @font-face {
     font-family: Readex_Pro;
     src: url(../fonts/ReadexPro-VariableFont_wght.ttf);
 }
 
+/* Smooth scrolling + background */
 html {
     scroll-behavior: smooth;
     background-color: #f49880;
     background-image: linear-gradient(to right, #01bfbf, #01bfbf 20px, #f49880 20px, #f49880);
     background-size: 40px 100%;
+}
+
+/* Formating for all hyperlinks */
+a {
+    text-decoration: none;
+    color: black;
 }
 
 main {
@@ -19,6 +27,15 @@ h1 {
     padding-top: 15px;  
 }
 
+/* Formating for the projects section */
+#projects {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Formatting for each project */
 .card {
     flex: 0 0 400px;
     max-width: 225px;
@@ -26,7 +43,7 @@ h1 {
     text-align: center;
     padding-bottom: 3px;
     margin: 3px;
-  }
+}
 .card header {
     font-size: 20px;
     font-weight: bold;
@@ -35,6 +52,7 @@ h1 {
     max-width: 200px;
 }
 
+/* Flagship project has special formating to enable larger size */
 #flagship_project {
     max-width: 475px;
     width: auto;
@@ -44,36 +62,25 @@ h1 {
     width: auto;
 }
 
-#projects {
-    flex: 4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
+/* Formating for the left-sided sidebar */
 sidebar {
-    /* background-color: red; */
-    padding: 5px;
     max-width: 150px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     flex: 1;
 }
-
 #sidebar_pic {
     max-width: 100px;
-    height: auto;
 }
-
 #sidebar_links {
     list-style: none;
     padding-left: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20px;
 }
-
 #sidebar_links a {
-    text-decoration: none;
-    color: black;
     font-weight: bold;
 }
 
@@ -95,10 +102,14 @@ body {
     padding-top: 0px;
 }
 
+/* Formatting for footer */
 #footer {
     text-align: center;
 }
 
+
+/* When page width is less than 700, the following actions are taken */
+/* Sidebar is stacked on top, title is aligned centre, flagship project becomes formatted like the other, top of link hidden */
 @media screen and (max-width: 700px) {
     main, sidebar {
         flex-direction: column;
@@ -115,5 +126,8 @@ body {
     }
     #flagship_project img {
         max-width: 200px;
+    }
+    #top_link {
+        display: none;
     }
 }

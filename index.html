@@ -8,11 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
-
-
 <body>
+    <!-- Target for the link to the top of the page -->
+    <a id="top"></a>
+
+    <!-- Title -->
     <h1>Steven's Portfolio</h1>
     
+    <!-- The webpage has a left-sided sidebar and the right-sided panel -->
     <main>
 
         <!-- Sidebar that stacks on top when window is small enough -->
@@ -24,60 +27,82 @@
                 <li><a href="#current_studies">Current studies</a></li>
                 <li><a href="#qualifications">Qualifications</a></li>
                 <li><a href="#contact_me">Contact me</a></li>
+                <div id = "top_link">
+                    <br>
+                    <li><a href="#top">Top of page</a></li>
+                </div>
+
             </ul>
         </sidebar>
-    
+        
+        <!-- Right-sided panel with all the content -->
         <right_panel>
+
             <!-- About me section -->
             <h2 id="about_me">About me</h2>
             
             <p>My name is Steven Phan. I am currently working as a PGY2 Resident Medical Officer at a large tertiary
-                hospital in Sydney. I have recently re-discovered coding and statistics, courses that I had done
-                as an undergraduate student during my Science degree. At the moment, I am currently buidling up my
-                skills this this area. In combination with my domain expertise in Medicine, I feel there is a significant
-                potential for contributions to both fields! See my work below for a taste.</p>
+                hospital in Sydney. I have recently re-discovered my interest in coding and statistics, fields I have
+                explored as an undergraduate Science student. I would like to utilise my skills and knowledge in both
+                fields to make unique contributions to both fields. See my work below for a taste!</p>
             
-            <!-- WORK section -->
+            <!-- My work section -->
+            <!-- Each 'card' is a differnt project -->
+            <!-- The flagship project is the first one which has the larger image -->
             <h2 id="my_work">My work</h2>
-            <p>The following are placeholders for future projects.</p>
+            <p>The following are placeholders for future projects. The links are dead ends.</p>
             <div id="projects">
                 <section id="flagship_project" class="card">
-                    <header>proj1</header>
-                    <img src="./assets/images/proj1.png" alt="proj1 placeholder image"/>
+                    <header><a href="./proj1/index.html/">proj1</a></header>
+                    <a href="./proj1/index.html/">
+                        <img src="./assets/images/proj1.png" alt="proj1 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj2</header>
-                    <img src="./assets/images/proj2.png" alt="proj2 placeholder image"/>
+                    <header><a href="./proj2/index.html/">proj2</a></header>
+                    <a href="./proj2/index.html/">
+                        <img src="./assets/images/proj2.png" alt="proj2 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj3</header>
-                    <img src="./assets/images/proj3.png" alt="proj3 placeholder image"/>
+                    <header><a href="./proj3/index.html/">proj3</a></header>
+                    <a href="./proj3/index.html/">
+                        <img src="./assets/images/proj3.png" alt="proj3 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj4</header>
-                    <img src="./assets/images/proj4.png" alt="proj4 placeholder image"/>
+                    <header><a href="./proj4/index.html/">proj4</a></header>
+                    <a href="./proj4/index.html/">
+                        <img src="./assets/images/proj4.png" alt="proj4 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj5</header>
+                    <header><a href="./proj5/index.html/">proj5</a></header>
+                    <a href="./proj5/index.html/">
                     <img src="./assets/images/proj5.png" alt="proj5 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj6</header>
-                    <img src="./assets/images/proj6.png" alt="proj6 placeholder image"/>
+                    <header><a href="./proj6/index.html/">proj6</a></header>
+                    <a href="./proj6/index.html/">
+                        <img src="./assets/images/proj6.png" alt="proj6 placeholder image"/>
+                    </a>
                 </section>
 
                 <section class="card">
-                    <header>proj7</header>
-                    <img src="./assets/images/proj7.png" alt="proj7 placeholder image"/>
+                    <header><a href="./proj7/index.html/">proj7</a></header>
+                    <a href="./proj7/index.html/">
+                        <img src="./assets/images/proj7.png" alt="proj7 placeholder image"/>
+                    </a>
                 </section>
             </div>
 
-            <!-- Current studies -->
+            <!-- Current studies section -->
             <h2 id="current_studies">Current studies</h2>
             <ul>
                 <li>The Coding Bootcamp</li>
@@ -94,7 +119,7 @@
                 </ul>
             </ul>
 
-            <!-- Education section -->
+            <!-- Qualifications section -->
             <h2 id="qualifications">Qualifications</h2>
             <ul>
                 <li>Bachelor of Science</li>
@@ -111,13 +136,16 @@
             <h2 id="contact_me">Contact me</h2>
 
             <ul>
-                <li>M: +61 (2) 434 010 101</li>
-                <li>F: +61 (2) 7501 0101</li>
-                <li>E: stevenphan@msn.com</li>
+                <li>Mobile: <a href="tel:+61434010101">0434 010 101</a></li>
+                <li>Fax: <a href="tel:+6175010101">7501 0101</a></li>
+                <li>Email: <a href="mailto:stevenphan@msn.com">stevenphan@msn.com</a></li>
+                <li>GitHub: <a href="https://github.com/fantastic679/">fantastic679</a></li>
             </ul>
 
         </right_panel>
     </main>
+
+    <!-- Footer message -->
     <p id="footer">Thanks for visiting!</p>
 </body>
 </html>
