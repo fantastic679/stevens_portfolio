@@ -1,16 +1,54 @@
-html {
-    scroll-behavior: smooth;
+@font-face {
+    font-family: Readex_Pro;
+    src: url(../fonts/ReadexPro-VariableFont_wght.ttf);
 }
 
-body{
-    max-width: 700px;
-    margin:auto;
-    padding-left: 30px;
-    padding-right: 30px;
+html {
+    scroll-behavior: smooth;
+    background-color: #f49880;
+    background-image: linear-gradient(to right, #01bfbf, #01bfbf 20px, #f49880 20px, #f49880);
+    background-size: 40px 100%;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
+}
+
+h1 {
+    padding-top: 15px;  
+}
+
+.card {
+    flex: 0 0 400px;
+    max-width: 225px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3px;
+    margin: 3px;
+  }
+.card header {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card img {
+    max-width: 200px;
+}
+
+#flagship_project {
+    max-width: 475px;
+    width: auto;
+}
+#flagship_project img {
+    max-width: 440px;
+    width: auto;
+}
+
+#projects {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 sidebar {
@@ -33,8 +71,10 @@ sidebar {
     padding-left: 0;
 }
 
-#sidebar_links.a {
+#sidebar_links a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 right_panel {
@@ -46,18 +86,21 @@ right_panel {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin:auto;
+    font-family: Readex_Pro;
     background-color: #EDEDED;
+    max-width: 700px;
+    margin:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
 }
 
 #footer {
-    text-align: right;
+    text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-    main,
-    sidebar {
+@media screen and (max-width: 700px) {
+    main, sidebar {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
@@ -66,5 +109,11 @@ body {
     }
     h1 {
         text-align: center;
+    }
+    #flagship_project {
+        max-width: 225px;
+    }
+    #flagship_project img {
+        max-width: 200px;
     }
 }
