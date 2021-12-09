@@ -7,43 +7,66 @@
     <title>Steven's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
+
+
+
 <body>
+    <a id="top"></a>
     <h1>Steven's Portfolio</h1>
-
-    <!-- About me section -->
-    <h2>About me</h2>
     
-    <p>My name is Steven Phan. I am currently working as a PGY2 Resident Medical Officer at a large tertiary
-        hospital in Sydney. I have recently re-discovered coding and statistics, courses that I had done
-        as an undergraduate student during my Science degree. At the moment, I am currently buidling up my
-        skills this this area. In combination with my domain expertise in Medicine, I feel there is a significant
-        potential for contributions to both fields! See my work below for a taste.</p>
+    <main>
+
+        <!-- Sidebar that stacks on top when window is small enough -->
+        <sidebar>
+            <img id="sidebar_pic" src="assets/images/steven.png" alt="Steven in surgical scrubs"/>
+            <ul id="sidebar_links">
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#current-studies">Current studies</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#contact_me">Contact me</a></li>
+            </ul>
+        </sidebar>
     
-    <!-- WORK section -->
-    <h2>Work</h2>
+        <right_panel>
+            <!-- About me section -->
+            <h2 id="about_me">About me</h2>
+            
+            <p>My name is Steven Phan. I am currently working as a PGY2 Resident Medical Officer at a large tertiary
+                hospital in Sydney. I have recently re-discovered coding and statistics, courses that I had done
+                as an undergraduate student during my Science degree. At the moment, I am currently buidling up my
+                skills this this area. In combination with my domain expertise in Medicine, I feel there is a significant
+                potential for contributions to both fields! See my work below for a taste.</p>
+            
+            <!-- WORK section -->
+            <h2 id="work">Work</h2>
 
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-    </ul>
+            <!-- Current studies -->
+            <h2 id="current-studies">Current studies</h2>
+            <ul>
+                <li>The Coding Bootcamp at The University of Sydney</li>
+                <li>Certificate IV in Real Estate Practice at TAFE</li>
+                <li>Bachelor of Data Analytics at The University of South Australia</li>
+            </ul>
 
-    <!-- Education section -->
-    <h2>Education</h2>
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-    </ul>
+            <!-- Education section -->
+            <h2 id="qualifications">Qualifications</h2>
+            <ul>
+                <li>Bachelor of Science at The University of Sydney</li>
+                <li>Doctor of Medicine at The University of Sydney</li>
+            </ul>
 
-    <!-- Contact me section -->
-    <h2>Contact me</h2>
+            <!-- Contact me section -->
+            <h2 id="contact_me">Contact me</h2>
 
-    <ul>
-        <li>M: +61 (2) 434 010 101</li>
-        <li>F: +61 (2) 7501 0101</li>
-        <li>E: stevenphan@msn.com</li>
-    </ul>
+            <ul>
+                <li>M: +61 (2) 434 010 101</li>
+                <li>F: +61 (2) 7501 0101</li>
+                <li>E: stevenphan@msn.com</li>
+            </ul>
 
+        </right_panel>
+    </main>
+    <p id="footer"><a href="#top">Return to top</a></p>
 </body>
 </html>
