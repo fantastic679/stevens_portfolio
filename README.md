@@ -14,7 +14,7 @@ A live demo of the page can be found at https://fantastic679.github.io/stevens_p
 
 The source code can be found at https://github.com/fantastic679/stevens_portfolio/.
 
-Here is a screen of the website in action.
+Here is a screenshot of the website in action.
 
 ![Screenshot of Steven's Portfolio as of 09/12/2021](/assets/images/screenshot.png?raw=true)
 
